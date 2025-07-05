@@ -18,16 +18,48 @@ html, body, #root {
   box-sizing: border-box;
 }
 
+.site-header {
+  margin-bottom: 2rem;
+}
+
 .logo-image {
   width: 200px;
   max-width: 80vw;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.construction-notice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 1rem; */
 }
 
 .construction-gif {
   width: 350px;
   max-width: 80vw;
   margin-bottom: 1rem;
+}
+
+/* Screen reader only class for accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .under-construction-container h1 {
@@ -39,4 +71,11 @@ html, body, #root {
 .under-construction-container p {
   font-size: 1.2rem;
   color: #334155;
+}
+
+.site-footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  color: #666;
+  font-size: 0.9rem;
 }
